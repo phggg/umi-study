@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 interface ITsProps {
   name?: string,
+  handleItem: Function
 }
 
 export default class ListItem1 extends Component<ITsProps, any>{

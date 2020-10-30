@@ -29,7 +29,7 @@ const config: IConfig = {
       {
         antd: true,
         dva: true,
-        dynamicImport: false,
+        dynamicImport: true,
         title: 'react',
         dll: true,
         routes: {
