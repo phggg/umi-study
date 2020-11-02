@@ -28,8 +28,8 @@ const config: IConfig = {
       'umi-plugin-react',
       {
         antd: true,
-        dva: false,
-        dynamicImport: false,
+        dva: true,
+        dynamicImport: true,
         title: 'react',
         dll: true,
         routes: {

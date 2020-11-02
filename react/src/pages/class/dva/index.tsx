@@ -1,13 +1,26 @@
 import React, {Component} from 'react';
 import Search from './search'
+import Lists from './lists'
+import {connect} from 'dva'
+import {ITsSearch} from '@/types/index'
+
 interface ITsProps {
-  [propName: string]: any
+  search: ITsSearch
 }
-class Dva extends Component<ITsProps,any> {
+
+interface ITsDvaState {
+  search: ITsSearch
+}
+
+class Dva extends Component<ITsProps, any> {
+
   render() {
     return (
       <div>
         <Search
+          {...this.props}
+        />
+        <Lists
           {...this.props}
         />
       </div>
@@ -15,4 +28,6 @@ class Dva extends Component<ITsProps,any> {
   }
 }
 
-export default Dva;
+export default connect((state: ITsDvaState) => (
+  {search: state.search}
+))(Dva)
