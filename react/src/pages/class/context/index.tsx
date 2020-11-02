@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import SearchContext from './searchContext'
 import Search from "./search";
-import Lists from './lists'
+// import Lists from './lists'
 import {getLists} from '@/service/search'
 import Consumer from "@/pages/class/context/consumer";
+import LazyLoad from '@/components/LazyLoad'
 
 interface ITsProps {
   [propName: string] : any
@@ -40,8 +41,12 @@ export default class Index extends Component<ITsProps,ITsState> {
   }
 
   render() {
+    const house = {
+      info: {}
+    }
     return (
       <div>
+        {house?.info2?.id}
         <SearchContext.Provider
           value={{
             state: this.state,
@@ -49,7 +54,8 @@ export default class Index extends Component<ITsProps,ITsState> {
           }}
         >
           <Search />
-          <Lists />
+          <LazyLoad component={import('./lists')}/>
+          {/*<Lists />*/}
           <Consumer />
         </SearchContext.Provider>
       </div>

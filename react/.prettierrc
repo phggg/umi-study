@@ -2,6 +2,8 @@
   "singleQuote": true,
   "trailingComma": "all",
   "printWidth": 100,
+  "prettier.arrowParens": "avoid",
+  "prettier.jsxSingleQuote": true,
   "overrides": [
     {
       "files": ".prettierrc",
