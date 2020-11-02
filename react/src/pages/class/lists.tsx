@@ -3,7 +3,7 @@ import ListItem1 from "@/pages/class/list-item1";
 
 export default class Lists extends Component<any, any>{
 
-  handleChild = (item) => {
+  handleChild = (item: string) => {
     console.log(item)
   }
 

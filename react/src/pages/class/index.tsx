@@ -19,6 +19,9 @@ export default function() {
         <List.Item>
           <Link to={'/class/lists'}>lists</Link>
         </List.Item>
+        <List.Item>
+          <Link to={'/class/dva'}>dva</Link>
+        </List.Item>
       </List>
     </div>
   );

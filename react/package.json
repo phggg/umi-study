@@ -8,7 +8,6 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.5.0",
     "antd": "^3.19.5",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
@@ -19,6 +18,8 @@
     "@types/react": "^16.7.18",
     "@types/react-dom": "^16.0.11",
     "@types/react-test-renderer": "^16.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
     "babel-eslint": "^9.0.0",
     "eslint": "^5.4.0",
     "eslint-config-umi": "^1.4.0",
