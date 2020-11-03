@@ -28,6 +28,9 @@ export default function() {
         <List.Item>
           <Link to={'/class/lazyLoad'}>lazyLoad</Link>
         </List.Item>
+        <List.Item>
+          <Link to={'/class/modal'}>modal</Link>
+        </List.Item>
       </List>
     </div>
   );

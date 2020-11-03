@@ -9,7 +9,7 @@ interface ITsProps {
   [propName: string]: any
 }
 
-const foo: any = (Cmp: ComponentType) => (props: any) => {
+const foo: ClassDecoratorMy = (Cmp) => (props: ITsProps) => {
   return (
     <div className="border">
       <Cmp {...props} />
