@@ -47,7 +47,7 @@ export default class Index extends Component<ITsProps,ITsState> {
     return (
       <div>
         {/*可选链技术*/}
-        {/*{house?.info2?.id}*/}
+        {/*{house.info2.id}*/}
         <SearchContext.Provider
           value={{
             state: this.state,

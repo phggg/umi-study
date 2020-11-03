@@ -12,6 +12,9 @@ interface ITsDvaState {
   search: ITsSearch
 }
 
+@connect((state: ITsDvaState) => (
+  {search: state.search}
+))
 class Dva extends Component<ITsProps, any> {
 
   render() {
@@ -28,6 +31,4 @@ class Dva extends Component<ITsProps, any> {
   }
 }
 
-export default connect((state: ITsDvaState) => (
-  {search: state.search}
-))(Dva)
+export default Dva
